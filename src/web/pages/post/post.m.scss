@@ -1,0 +1,89 @@
+﻿.post {
+    padding: 20px;background:#fff;height: 100%;
+    .btnBar{
+        .left{
+            a{font-size: 16px;color:#666;}
+        }
+        .right{
+            button{
+
+            }
+            :global{
+                .am-button-primary{
+                    background-color: #232C5E;
+                }
+            }
+        }
+    }
+
+    .title{
+        input{font-size: 22px;padding:0;margin:0;line-height: 26px;margin-top:15px;border:0;color:#232C5E;}
+    }
+
+    .note{
+        background: #F3F8FB;
+        border-radius: 4px;
+        padding:15px;
+        margin-top:15px;
+        position: relative;
+        p{
+            font-size: 16px;
+        }
+        ul{
+            padding-top:10px;
+            li{
+                color:#666;line-height: 16px;font-size: 12px;
+            }
+        }
+        .closeBtn{
+            position: absolute;top:12px; right:10px; width:20px;height: 20px; line-height: 20px; text-align: center;
+            :global{
+                .am-icon-cross{width: 16px;}
+            }
+        }
+    }
+
+    .sendTo{
+        margin-top: 10px;font-size: 16px;
+        .highlight{
+            color: #1E8CF9;
+        }
+        input{border:0;}
+    }
+
+    .description{
+        margin-top:20px;
+        textarea{
+            width:100%;min-height: 100px;font-size: 14px;line-height: 16px;border:0;
+        }
+    }
+
+    .picList{
+        .picItem{
+            width: 75px;height: 75px;border-radius: 4px;float:left;margin-right:5px;position: relative;
+            img{
+                width: 75px;height: 75px;border-radius: 4px;
+            }
+            .del{
+                position: absolute; top:5px;left:5px;width:20px;height:20px;background: url(../../images/icon-delete.png); background-size: 100%; color:#fff;font-size: 10px;text-align: center;line-height: 16px;border-radius: 4px 0 4px 0;
+            }
+            &:first-child{
+                &::after{
+                    content:'封面';position: absolute; bottom:0;right:0;width:32px;height:16px;background: #FF4545;color:#fff;font-size: 10px;text-align: center;line-height: 16px;border-radius: 4px 0 4px 0;
+                }
+            }
+        }
+        :global{
+            .ant-upload-select-picture-card{
+                width: 75px;height: 75px;
+            }
+        }
+        .uploadBtn{
+            color:#aaa;
+            font-size: 10px;
+        }
+    }
+
+    :global{
+    }
+}

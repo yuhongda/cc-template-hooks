@@ -1,0 +1,17 @@
+
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@function rem($n) {
+  @return $n / 75 + rem;
+}
+
+@mixin ellipsisMultiLines($n) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $n;
+  -webkit-box-orient: vertical;  
+}
